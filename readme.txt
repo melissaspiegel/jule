@@ -1,3 +1,59 @@
+========
+Go to git repo https://github.com/alialaa/wp-blocks-course-boilerplate
+Terminal go to plugins folder and clone above repo.
+
+Create a block
+Rename and Update the comments in the main plugin file in this case boilerplate.php
+Index.js change the register block function
+create-block/boilerplate to block-course/text-blcok
+git clone https://github.com/alialaa/wp-blocks-course-boilerplate.git nameofblock text-block
+git remote -v will show the git repo above but we cannot push to it bc it is not ours and we want to keep it for a great beginning.
+git remote rename origin upstream basically renaming the origin branch to upstream strange I know
+git remote add origin https://github.com/melissaspiegel/jule.git
+Open up block.json update info
+* Change register block function in index.js change 
+    * create-block/boilerplate
+    * To 
+    * Block-course/text-block
+    * mwm-text/text-block
+    * Rename boilerplate.php file which is the main plugin file to text-block.php
+    * Change the info in the comment of text-block.php
+    * Change function to match our new prefix and block name 
+        * Change from create_block_boilerplate_block_init
+        * Change to 
+            * mwm_text_text_block_block_init
+            * BAD NAMING ON MY PART
+*         npm install 
+* npm run start to compile 
+* Got to WordPress admin and activate plugin - YAY!
+
+
+
+
+origin    https://github.com/melissaspiegel/jule.git (fetch)
+origin    https://github.com/melissaspiegel/jule.git (push)
+upstream    https://github.com/alialaa/wp-blocks-course-boilerplate.git (fetch)
+upstream    https://github.com/alialaa/wp-blocks-course-boilerplate.git (push)
+IT-USA-B00704:text-block mspiegel$ git add -A
+IT-USA-B00704:text-block mspiegel$ git commit -m"added vscod confi"
+On branch main
+Your branch is up to date with 'upstream/main'.
+nothing to commit, working tree clean
+IT-USA-B00704:text-block mspiegel$ git push -u origin main
+Enumerating objects: 92, done.
+Counting objects: 100% (92/92), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (44/44), done.
+Writing objects: 100% (92/92), 718.03 KiB | 718.03 MiB/s, done.
+Total 92 (delta 43), reused 92 (delta 43), pack-reused 0
+remote: Resolving deltas: 100% (43/43), done.
+To https://github.com/melissaspiegel/jule.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+IT-USA-B00704:text-block mspiegel$ 
+
+
+
 === Boilerplate ===
 Contributors:      The WordPress Contributors
 Tags:              block
