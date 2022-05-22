@@ -1,7 +1,7 @@
 ========
 Go to git repo https://github.com/alialaa/wp-blocks-course-boilerplate
 Terminal go to plugins folder and clone above repo.
-
+Name of file must match main plugin file textblock textblock.php
 Create a block
 Rename and Update the comments in the main plugin file in this case boilerplate.php
 Index.js change the register block function
