@@ -21,6 +21,15 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
+1.Go to the git repo https://github.com/alialaa/wp-blocks-course-boilerplate
+2.In terminal cd to plugins and clone the repo above
+Notes: Name of file must match main plugin file textblock textblock.php
+3.Main plugin file update its contents including the main function pay close attention to naming convensions
+4.Set up remote repo //git remote rename origin upstream or git remote add origin https://github.com/melissaspiegel/jule.git
+5.Go into the main block.json file and update info here, pay attention to namespace and pre text before slug
+6.Run //npm run start to compile
+7.Go to WordPress admin and activate plugin - YAY!
+
 1. Upload the plugin files to the `/wp-content/plugins/boilerplate` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
